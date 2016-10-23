@@ -1,0 +1,228 @@
+@import "../functions";
+// Custom variables\
+$flexsliderheight-large: 650px;
+$flexsliderheight-medium: 580px;
+$flexsliderheight-small: 400px;
+
+@media #{$large-up} { 
+	.flex-control-nav{
+		/*display:  none;*/
+	}
+	.flex-slider{
+		max-height: $flexsliderheight-large;
+	}
+	.flex-slider img.flex-big-image{
+		min-height: $flexsliderheight-large;
+	}
+	.flex-slider .extra-wrapper{
+		min-height: $flexsliderheight-large;
+	}
+	
+	.flex-slider .flex-text p{
+		font-size: 2.6rem;
+		line-height: 3.5rem;
+	}
+}
+@media #{$medium-only} { 
+	.flex-control-nav{
+		display:  none;
+	}
+	.flex-slider{
+		max-height: $flexsliderheight-medium;
+	}
+	.flex-slider img.flex-big-image{
+		min-height: $flexsliderheight-medium;
+	}
+	.flex-slider .extra-wrapper{
+		min-height: $flexsliderheight-medium;
+	}
+	.flex-slider .flex-text p{
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+	}
+}
+@media #{$small-only} { 
+	.flex-control-nav{
+		display:  none;
+	}
+	.flex-slider{
+		max-height: $flexsliderheight-small;
+	}
+	.flex-slider img.flex-big-image{
+		min-height: $flexsliderheight-small;
+	}
+	.flex-slider .extra-wrapper{
+		min-height: $flexsliderheight-small;
+	}
+	.flex-slider .flex-text{
+		padding: 1.5rem 1.5rem 0.4rem;
+		bottom: 1.5rem !important;
+	}
+	.flex-slider .flex-text p{
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+	
+	
+}
+$body-font-color: #666;
+
+.flexslider {
+	margin-bottom: 0;
+}
+.flex-control-nav {
+    bottom: 10px;
+    z-index: 100;
+}
+.flex-control-paging li a {
+    background: none 0 0 repeat scroll rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+}
+.flex-control-paging li a:hover {
+    background: orange;
+}
+.flex-control-paging li a.flex-active {
+    background: $maincolor none repeat scroll 0 0;  
+}
+
+
+.flexslider{
+	border:  0;
+}
+.flex-slider{
+	/*max-height: $flexsliderheight;*/
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	border: 0;
+}
+.flex-slider img.flex-big-image{
+	/*min-height: $flexsliderheight;*/
+	width: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+.flex-slider .extra-wrapper{
+	position: absolute;
+	z-index: 1111;
+	top: 0;
+	width: 100%;
+	/*min-height: $flexsliderheight;*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.flex-slider .flex-moon{
+	max-width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.flex-slider .flex-moon img{
+	height: inherit;
+	width: inherit;
+}
+.flex-slider .flex-text{
+	position: absolute;
+	bottom: 3.5rem;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: normal;
+	/*padding: 1.5rem;	*/
+}
+.flex-slider .flex-text  h2{
+	color: #fff;
+	font-size: 2rem;
+	font-weight: normal;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 940px;
+	
+}
+.flex-slider .flex-text p{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	/*font-size: 2.6rem;*/
+	/*line-height: 3.5rem;*/
+	margin-bottom: 0;
+	text-shadow: 1px 1px 4px #000;
+}
+.flex-slider .flex-readmore{
+	background: #fff;
+	color: $ppblue;
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 3.2rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: .6rem;
+	line-height: 3.2rem;
+	font-family: "Roboto",sans-serif;
+	text-transform: uppercase;
+}
+.flex-slider .flex-readmore:hover{
+	background: $ppblue;
+	color: #fff;
+}
+
+
+
+/*.flex-slider .flex-text {*/
+
+/*.flexslider .flex-bild{
+	position: relative;
+}
+.flexslider h2{
+	/*position: relative;*!/
+}
+
+.flexslider .flex-bildtext{
+	position: absolute;
+	max-width: 320px;
+	width: 100%;
+	left: 0;
+	top: 48%;
+	padding-bottom: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
+	color: $white;
+}
+.flexslider h2.flex-bildtext p{
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+.flexslider .flex-moon{
+	position: absolute;
+	max-width: 320px;
+	width: 100%;
+	left: 0;
+	top: 10%;
+}
+.flexslider .flex-moon img{
+	width: 200px;
+	height: 205px;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+/*.flexslider .flex-moon h2{
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 4px;
+	font-size: 0.80rem;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	color:  $ppblue;
+}*/
+/*Typografi*/
+
+/*.flexslider .flex-bildtext blockquote{
+	margin: 0;
+	color: $ppblue;
+	border:  none;
+	padding: 0; 
+}*/
