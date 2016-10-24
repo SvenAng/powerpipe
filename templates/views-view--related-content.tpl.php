@@ -52,9 +52,9 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-<!--    <div class="columns">-->
+    <div class="columns">
       <?php print $rows; ?>
-<!--    </div>-->
+    </div>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>

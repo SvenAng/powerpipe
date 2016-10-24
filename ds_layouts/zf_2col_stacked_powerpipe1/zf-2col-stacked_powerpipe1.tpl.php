@@ -8,18 +8,19 @@
 
 
 
-<<?php print $layout_wrapper; print $layout_attributes; ?> class="zf-2col-stackeds <?php print $classes;?>">
+<<?php print $layout_wrapper; print $layout_attributes; ?> class="row zf-2col-stackeds <?php print $classes;?>">
 
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
   <?php if (!empty($header)): ?>
-    <div class="<?php print $zf_wrapper_classes; ?>>
-      <<?php print $header_wrapper ?> class="group-header columns snall-12">
-      <?php print $header; ?>
-      </<?php print $header_wrapper ?>>
+    <div class="row">
+        <div class="group-header columns snall-12">
+            <?php print $header; ?>
+        </div>
     </div>
+        
   <?php endif; ?>
 
   
