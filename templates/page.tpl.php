@@ -11,7 +11,7 @@
   <?php $ovrigapath_se = '/sv/kontakt/ovriga';?>
   <?php $ovrigapath_en = '/en/contact/common';?>
   <?php $ledningpath_se = '/sv/kontakt/ledning';?>
-  <?php $ovrigapath_en = '/en/contact/management';?>
+  <?php $ledningpath_en = '/en/contact/management';?>
   <?php $vitbakgrund = ""; ?>
     <a class="exit-off-canvas"></a>
 <!--.page -->
