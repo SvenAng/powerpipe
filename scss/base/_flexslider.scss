@@ -1,10 +1,29 @@
 @import "../functions";
 // Custom variables\
+$flexsliderheight-xlarge: 1050px;
 $flexsliderheight-large: 650px;
 $flexsliderheight-medium: 580px;
 $flexsliderheight-small: 400px;
 
-@media #{$large-up} { 
+@media #{$xlarge-up} { 
+	.flex-control-nav{
+		/*display:  none;*/
+	}
+	.flex-slider{
+		max-height: $flexsliderheight-xlarge;
+	}
+	.flex-slider img.flex-big-image{
+		min-height: $flexsliderheight-xlarge;
+	}
+	.flex-slider .extra-wrapper{
+		min-height: $flexsliderheight-xlarge;
+	}
+	.flex-slider .flex-text p{
+		font-size: 2.6rem;
+		line-height: 3.5rem;
+	}
+}
+@media #{$large-only} { 
 	.flex-control-nav{
 		/*display:  none;*/
 	}
