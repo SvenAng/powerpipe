@@ -32,12 +32,12 @@
     <div class="lev1-navigation row">
       <!--<div class="row">-->
 	      
-  		<div class="small-10 large-4 columns logo">
+  		<div class="small-10 large-3 columns logo">
   			<div class="logo-inside">	
        		<?php print $linked_logo; ?>		
   		  </div>
   		</div>
-  		<div class="large-8 columns main-navigation show-for-large-up">
+  		<div class="large-9 columns main-navigation show-for-large-up">
         <div class="language-menu"><?php print render($page['langu']); ?></div>
   			<?php print render($page['nav1']); ?>
       </div>
