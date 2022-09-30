@@ -151,106 +151,59 @@ ul.breadcrumbs {
 
 .main-navigation {
     padding-left: 0;
-    // float: right;
 }
-header ul{
-    
-}
+
 header ul.main-menu {
-    overflow: hidden;
     display: flex;
-    justify-content: end;
-    width: 100%;
-    margin-left: 0;
-    // margin-top: 0.6rem;
-    /*margin: 0;*/
-    .first a{
-        // padding-left: 0;
-    }
-    .last a{
-        // padding-right: 0;
-    }
+    justify-content: start;
+    margin-top: 13px;
 }
 
 header .main-menu ul {
-    position: absolute;
-    left: 1rem;
+    position: relative;
 }
 
 header .main-menu ul.submenu {
-    // overflow: hidden;
-        display: flex;
-        justify-content: end;
+    overflow: hidden;
+    position: absolute;
     -webkit-opacity: 0;
     -moz-opacity: 0;
     opacity: 0;
-    // transition: all 0.1s ease;
-    z-index: -1;
-    width: 100%;
-    display: block;
+    visibility: hidden;
+    background-color: white;
     padding-top: 0.3rem;
     margin: 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 200px;
+    li{
+        border-bottom: 1px solid rgb(206, 206, 206);
+        a{
+            padding: 0.5rem 0;
+        }
+    }
+    li:last-child{
+        border: inherit;
+    }
 }
 
-header .main-menu li.active-trail ul.submenu {
-    z-index: 1;
-    /*padding-top: 1rem;*/
-    // overflow: hidden;
-        display: flex;
-        justify-content: end;
-}
 
 header .main-menu .expanded:hover ul.submenu {
     -webkit-opacity: 1;
     -moz-opacity: 1;
     opacity: 1;
-    display: flex;
-        justify-content: end;
-    // transition: all 0.5s ease;
     visibility: visible;
-    /*position: absolute;*/
-    /*left: 1rem;*/
-    z-index: 1;
-    /*padding-top: 1rem;*/
-    padding-right: 2rem;
-}
-
-header .main-menu ul.submenu.hidden {
-    visibility: hidden !important;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    opacity: 0;
-    // transition: all 0.1s ease;
-    /*padding-top: 1rem;*/
-}
-
-li.active-trail ul.submenu {
-    
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    opacity: 1;
-    // transition: all 1s ease;
-    visibility: visible;
-    /*padding-top: 1rem;*/
-    padding-right: 2rem;
+    z-index: 99;
 }
 
 header .main-menu li {
-    // float: left;
     list-style-type: none;
-}
-
-header .main-menu li.first a {
-    /*padding-left: 0;*/
 }
 
 header .main-menu li a {
     display: block;
     line-height: 1;
-    padding: 0 0 0 1.2rem;
+    padding:  0 0.6rem;
     color: $black;
-    // color: orange;
-    /*font-family:  $header-font-family;*/
     font-family: $font-karla;
     line-height: 1.3rem;
     text-transform: uppercase;
@@ -268,12 +221,6 @@ header .lev1-navigation .main-menu li a.active-trail,
 header .lev1-navigation .main-menu li a:hover {
     color: $ppblue;
 }
-
-
-/*header .lev2-navigation .main-menu > li > a.active,
-header .lev2-navigation .main-menu > li > a:hover {
-	color: $textblack;
-}*/
 
 
 /*========================================= */
@@ -412,13 +359,6 @@ $localefontoffcanvas: 1rem;
     font-size: $localefontoffcanvas;
 }
 
-ul.main-menu {
-    /* funkar inte float: right;*/
-    /*float: right;*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*width: 100%;*/
-}
 
 
 /*Overrides*/
