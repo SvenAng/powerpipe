@@ -3,7 +3,9 @@
 // $body-bg: #ccc;
 
 /*$body-font-color: #666;*/
-
+a{
+    // color:#009ee3 !important;
+}
 // $body-font-family: times;
 .l-main img {
     max-width: 100%;
@@ -68,7 +70,7 @@
 
 .l-header {
     background-color: $white;
-    border-bottom: 0.4rem solid $ppblue;
+    border-bottom: 0.4rem solid #4cba43;
     padding-top: 0.3rem;
     padding-bottom: 0.7rem;
     .row{
