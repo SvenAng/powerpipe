@@ -26,9 +26,10 @@
 ?>
 
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  -ITEMS wrapper-
+  
+  
   <?php
     print $content;
   ?>
-  ---endwrapper--
+  
 </div>

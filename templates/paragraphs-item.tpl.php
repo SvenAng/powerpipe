@@ -26,10 +26,7 @@
  * @see template_process()
  */
 ?>
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <div class="content"<?php print $content_attributes; ?>>
-    ITEM<?php //print render($content); ?>
-    <div class=""><?php print render($content['field_link_p']); ?></div>
-    emd item
-  </div>
-</div>
+<a class="puff-wrapper" href="<?php print trim(strip_tags(render($content['field_link_p']))); ?>">
+<?php print render($content['field_image_p']); ?>
+<?php print render($content['field_text_p']); ?>
+</a>

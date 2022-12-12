@@ -61,5 +61,12 @@ function powerpipe_preprocess_file_icon(&$variables) {
     metatag_page_build($vars['page']);
   }
 }
+
+
+function powerpipe_paragraphs_view($variables) {
+   $element = $variables['element'];
+   return $element['#children'];
+}
+
 ?>
 

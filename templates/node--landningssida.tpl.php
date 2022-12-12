@@ -75,7 +75,7 @@
  * @see template_process()
  */
 ?>
-Landningssida
+
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
@@ -101,14 +101,27 @@ Landningssida
   hide($content['comments']);
   hide($content['links']);
   hide($content['field_tags']);
+  hide($content['field_bild']);
+  hide($content['field_bild_left']);
+  hide($content['field_bild_right']);
+  hide($content['field_video']);
   print render($content);
+  print "<div class='row'>";
+  print "<div class='column large-8 left'>";
+  print render($content['field_bild_left']); 
+  print "</div>";
+  print "<div class='column large-4 right'>";
+  print render($content['field_bild_right']);
+  print "</div>";
+  print "</div>"; 
+  print "</div>"; 
   ?>
 
   <?php if (!empty($content['field_tags']) && !$is_front): ?>
     <?php print render($content['field_tags']) ?>
   <?php endif; ?>
 
-  <?php print render($content['links']); ?>
-  <?php print render($content['comments']); ?>
+  <?php //print render($content['links']); ?>
+  <?php //print render($content['comments']); ?>
 
 </article>

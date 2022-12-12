@@ -88,10 +88,11 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to define default font stacks
 
-@import url(https://fonts.googleapis.com/css?family=Karla);
+// @import url(https://fonts.googleapis.com/css?family=Karla);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300); 
- @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Karla:wght@300;400;500;700&display=swap');
  $font-family-sans-serif: "Roboto", sans-serif;
  $font-family-serif-p: "Merriweather", serif;
  $font-family-serif: "Karla", serif;
@@ -114,7 +115,7 @@ $include-html-global-classes: $include-html-classes;
  $white       : #FFFFFF;
  $ppblue       : #009ee3;
  $maincolor : #009ee3;
- $contentgray	:d9d9d9;
+ $contentgray	:#d9d9d9;
  $ghost       : #FAFAFA;
  $snow        : #F9F9F9;
  $vapor       : #F6F6F6;
