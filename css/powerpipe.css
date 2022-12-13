@@ -7229,6 +7229,7 @@ table tr td {
 .node-type-landningssida .body a {
   font-size: 2rem;
   font-weight: 200;
+  letter-spacing: -0.8px;
 }
 .node-type-landningssida a:last-child {
   padding-bottom: 0rem;

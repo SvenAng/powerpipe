@@ -30,7 +30,7 @@
 <div class="video-wrapper">
     <img class="overlay-logo" src="/sites/all/themes/powerpipe/images/bubble-200_utanskugga.png">
     <video autoplay="autoplay" playsinline loop="loop" preload="auto" muted="muted">
-        <source src="<?php print $rows; ?>" type="video/mp4">
+        <source src="/sites/default/files/<?php print $rows; ?>" type="video/mp4">
             Your browser does not support the video tag.
     </video>
 </div>
