@@ -46,52 +46,48 @@
 <!-- @see http://foundation.zurb.com/docs/index.html#basicHTMLMarkup -->
 
 <!--[if IE 8]><html class="no-js lt-ie9" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
+<!--<![endif]-->
+
 <head>
-  <?php print $head; ?>
-  <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
-  <!--[if lt IE 9]>
+    <?php print $head; ?>
+    <title><?php print $head_title; ?></title>
+    <?php print $styles; ?>
+    <?php print $scripts; ?>
+    <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-  <script type="text/javascript">
-  function MM_goToURL() { //v3.0
-      var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-      for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-  }
-</script>
+    <script type="text/javascript">
+    function MM_goToURL() { //v3.0
+        var i, args = MM_goToURL.arguments;
+        document.MM_returnValue = false;
+        for (i = 0; i < (args.length - 1); i += 2) eval(args[i] + ".location='" + args[i + 1] + "'");
+    }
+    </script>
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  
-  <div class="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
-	  <?php print $page_top; ?>
-	  <?php print $page; ?>
-	  <?php print $page_bottom; ?>
-	  <?php print _zurb_foundation_add_reveals(); ?>
-	  </div>
-  </div>
-  <script>
-    (function ($, Drupal, window, document, undefined) {
-      $(document).foundation();
-    })(jQuery, Drupal, this, this.document);
-  </script>
-  <script src="/sites/all/themes/powerpipe/js/menyscript.js"></script>
-  
 
-<script type="text/javascript">
-      var psSite = "b0d645fdac";
-      (function() {
-          var AL = document.createElement('script'); AL.type = 'text/javascript'; AL.async = true;
-          AL.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + "tr.apsislead.com/al_v2.js";
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(AL, s)
-      })();
-  </script>
-  <noscript><img src="http://tr.apsislead.com/?id=b0d645fdac" style="border:0;display:none;"></noscript>
+<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+
+    <div class="skip-link">
+        <a href="#main-content"
+            class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+    </div>
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <?php print $page_top; ?>
+            <?php print $page; ?>
+            <?php print $page_bottom; ?>
+            <?php print _zurb_foundation_add_reveals(); ?>
+        </div>
+    </div>
+    <script>
+    (function($, Drupal, window, document, undefined) {
+        $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+    </script>
+    <script src="/sites/all/themes/powerpipe/js/menyscript.js"></script>
 
 </body>
+
 </html>
